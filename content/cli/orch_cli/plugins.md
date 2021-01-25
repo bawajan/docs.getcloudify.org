@@ -296,9 +296,10 @@ Update the plugins of all the deployments of the blueprint
                               specified, the current tenant will be used
 *  `--include-logs / --no-logs`  - Include logs in returned events [default: True]
 *  `--json-output`              -  Output events in a consumable JSON format
-*  `-f, --force`                 Force running the update also in case a
-                              blueprint (for which the update is executed) is
-                              used as a component
+* `-f, --force`                 Force running the update when the previous update
+                              has failed to finish successfully. This flag applies
+                              to both direct deployment update and cascading update
+                              to components.
 
 #### Example
 
